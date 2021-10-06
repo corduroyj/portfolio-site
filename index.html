@@ -1,0 +1,113 @@
+<!-- IMPORTANT!!! RUN nup runn compile:sass FROM the bootstrap-v5 directory -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>LitcentralVI sass practice</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light menu shadow fixed-top">
+    <div class="container">
+        <a class="navbar-brand logo-img" href="#home">
+            <img src="images/logo.png" alt="logo image"> Literacy Central Vi
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#friends">Friends</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#volunteer">Volunteer</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#our publications">Our Publications</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#bookstore">Bookstore</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+        <button type="button" class="rounded-pill btn-rounded">250-754-8988
+            <span>
+                <i class="fas fa-phone-alt"></i>
+            </span>
+        </button>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Intro Section -->
+
+    <section id="home" class="intro-section">
+        <div class="container">
+            <div class="row align-items-center text-white">
+
+                <div class="col-md-6 intros">
+                    <h1 class="display-2">
+                        <span class="display-2--intro">Outreach, Tutoring</span>
+                        <span class="display-2--description lh-base">Are you an adult who would like some help improving your language or math skills? Would you find it difficult to come to our downtown Nanaimo location? Our volunteer tutors can help you impove and develop your reading, writing, math and computer skills online!</span>
+                    </h1>
+                    <button type="button" class="rounded-pill btn-rounded">Get in Touch!
+                        <span>
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+                    </button>
+                </div>
+                <!-- Second Column / Video Content -->
+                <div class="col-md-6 intros text-end">
+                    <div class="video-box">
+                        <img src="images/arts/Online lesson _Flatline.svg" alt="video illustration" class="img-fluid">
+
+                        <!-- ANIMATED VIDEO PLAY BUTTON & VIDEO, UNCOMMENT AFTER VIDEO IN SCRIPT HAS BEEN ASSIGNED
+                        <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
+                            <span>
+                                <i class="fas fa-play-circle"></i>
+                            </span>
+
+                            <span class="border-animation border-animation--border-1"></span>
+                            <span class="border-animation border-animation--border-2"></span>
+                        </a>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,256L30,240C60,224,120,192,180,192C240,192,300,224,360,234.7C420,245,480,235,540,218.7C600,203,660,181,720,170.7C780,160,840,160,900,176C960,192,1020,224,1080,218.7C1140,213,1200,171,1260,170.7C1320,171,1380,213,1410,234.7L1440,256L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+    </section>
+
+    <script src="/assets/vendors/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            {
+            'href': // ASSIGN YOUR VIDEO HERE 'https://www.youtube.com/watch?v=Ga6RYejo6Hk',
+            'type': 'video',
+            'source': 'youtube', //vimeo, youtube or local
+            'width': 900,
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
